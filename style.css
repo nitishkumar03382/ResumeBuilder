@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+ 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.combined {
+   
+    height: 100%; 
+    display: flex;
+    gap: 10px;
+}
+
+.input, .preview {
+    height: 100%;  
+    overflow-y: auto;  
+}
+
+.input {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+.preview{
+    width: 75%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #e9ecef;
+    
+}
+
