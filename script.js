@@ -11,6 +11,10 @@ function display(inp, op) {
     else if(inp == inp_linkedin){
         op.innerText = "Linkedin id :-  " + inp.value; 
     }
+
+    else if(inp == inp_cgpa){
+        op.innerText = "CGPA  :-   " + inp.value; 
+    }
     else
     op.innerHTML = inp.value
 }
