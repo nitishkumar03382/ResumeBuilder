@@ -1,39 +1,175 @@
-*{
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
     padding: 0;
-    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-html, body{
- 
-    height: 100%;
+*{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 .combined {
-   
-    height: 100%; 
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .input, .preview {
-    height: 100%;  
-    overflow-y: auto;  
+    width: 25%;
+    padding: 15px;
+    /* background: #fff; */
+    background-color: hsl(0, 0%, 94%);
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-.input {
-    width: 25%;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
+.input h2, .input p {
+    margin-bottom: 10px;
+    font-weight: bold;
 }
+
+.input input[type="text"] {
+    width:  100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.preview .intro h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #0056b3;
+}
+
+.preview .intro h3 {
+    margin: 5px 0;
+    color: #444;
+}
+
+.preview .intro a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.preview .intro a:hover {
+    text-decoration: underline;
+}
+
+.preview .intro span, .preview .intro p {
+    font-size: 16px;
+    color: #333;
+}
+
+.input{
+    width: 25%;
+    height: 100%;
+}
+
 .preview{
     width: 75%;
-    padding: 10px;
-    box-sizing: border-box;
-    background-color: #e9ecef;
+    height: 100%;
+}
+
+
+#intro-name{
+    text-align: center;
+    font-weight: 500;
+    font-size: 35px;
+}
+
+#intro-profile{
+    display: inline-block;
+    width: 50%;
     
+  
+    padding-right: 5px;
+    text-align: right;
+   
+    color: #636060;
+    font-size: 15px;
+}
+
+#intro-address{
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#intro-linkedin{
+    position: relative;
+    right: 200px;
+    font-size: 15px;
+    padding-left: 300px;
+}
+
+#intro-email{
+    position: relative;
+    display: inline-block;
+    padding-top: 8px;
+    left: 40px;
+}
+
+#intro-phone{
+    display: inline-block;
+    position: relative;
+    left: 78%;
+    bottom: 18px;
+
+}
+
+#education-nav{
+    padding: 10px;
+   border-bottom: 3px solid black;
+}
+
+#intro-collage{
+    position: relative;
+    font-size: 23px;
+    top: 10px;
+    font-weight: 550;
+    color: #0056b3;
+}
+
+#intro-collage_address{
+    position: relative;
+    top: 10px;
+    left: 8px;
+    color:  #636060;
+    font-size: 16px;
+}
+
+
+#intro-course{
+    display: block;
+    position: relative; 
+    top: 18px;
+    font-size: 18px;
+    color: #333;
+
+
+}
+
+#arrow{
+    position: relative;
+    top: 20px;
+    margin-right: 5px;
+}
+
+#intro-cgpa{
+    position: relative;
+    top: 20px;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
 }
 

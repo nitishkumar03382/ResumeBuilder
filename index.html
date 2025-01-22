@@ -5,24 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Builder</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <div class="combined">
-        <div class="input">Input
+        <div class="input">
             <br>
-            <p>Name</p>
+            <p>User profile</p>
+            <br>
             <input type="text" placeholder="Enter your name" id="input-name">
             <input type="text" placeholder="Profile" id="input-profile">
             <input type="text" placeholder="LinkedIn" id="input-linkedin">
+            <input type="text" placeholder="address" id="input-address">
+            <input type="text" placeholder="Email" id="input-email">
+            <input type="text" placeholder="phone no" id="input-phone">
+            <p>Education</p>
+            <input type="text" placeholder="Collage name" id="input-collage">
+            <input type="text" placeholder="Collage address" id="input-collage_address">
+            <input type="text" placeholder="Course name" id="input-course">
+            <input type="text" placeholder=" Enter CGPA " id="input-cgpa">
           </div>
           <div class="preview">
             <div class="intro">
-              <h1 id="intro-name"></h1>
-              <h3 id="intro-profile"></h3>
-              <span id="intro-linkedin"></span>
-              
-            </div>
+
+              <div class="navbar">
+                <h1 id="intro-name"></h1>
+                <span id="intro-profile"></span>
+                <span id="intro-address"></span>
+                <br>
+                <a id="intro-email"></a>
+                <a href="" id="intro-linkedin"></a>
+                
+                <span id="intro-phone"></span>
+                
+              </div>
+             <h2 id="education-nav">EDUCATION</h2>
+              <section class="Education">
+                   <span id="intro-collage"></span>
+                   <span id="intro-collage_address" ></span>
+                   <span id="intro-course"></span>
+                   <i class="fa-solid fa-arrow-right" id="arrow"></i>
+
+                   <span id="intro-cgpa" ></span>
+              </section>
+
+              </div>
+             
+          
           </div>
     </div>
      
