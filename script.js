@@ -1,17 +1,10 @@
 // name_inp = 
 function display(inp, op) {
 
-    if(inp == inp_email){
-        op.innerText = "Email :-  " + inp.value; 
-    }
-   else if(inp == inp_phone){
+
+   if(inp == inp_phone){
         op.innerText = "Phone: +91 " + inp.value; 
     }
-
-    else if(inp == inp_linkedin){
-        op.innerText = "Linkedin id :-  " + inp.value; 
-    }
-
     else if(inp == inp_cgpa){
         op.innerText = "CGPA  :-   " + inp.value; 
     }

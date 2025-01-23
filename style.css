@@ -105,22 +105,22 @@ body {
     padding-left: 10px;
 }
 
-#intro-linkedin{
+.intro-linkedin{
     position: relative;
     right: 200px;
+    left: 50px;
     font-size: 15px;
     padding-left: 300px;
 }
 
-#intro-email{
+.intro-email{
     position: relative;
-    display: inline-block;
-    padding-top: 8px;
-    left: 40px;
+    display: inline;
+    top: 20px;
 }
 
 #intro-phone{
-    display: inline-block;
+    display: inline;
     position: relative;
     left: 78%;
     bottom: 18px;
@@ -174,3 +174,13 @@ body {
     font-weight: 600;
 }
 
+
+.input {
+    width: 25%; /* Specify width */
+    height: 700px; /* Specify height */
+    border: 1px solid #ccc; /* Optional border for visibility */
+    padding: 10px; /* Internal spacing */
+    overflow-y: auto; /* Adds a vertical scrollbar if content overflows */
+    overflow-x: hidden; /* Disables horizontal scrollbar */
+    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
+}
