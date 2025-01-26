@@ -74,3 +74,4 @@ inp_cgpa.addEventListener("input", ()=>{
 display(inp_cgpa,intro_cgpa)
 })
 
+
