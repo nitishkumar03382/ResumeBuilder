@@ -74,3 +74,23 @@ inp_cgpa.addEventListener("input", ()=>{
 display(inp_cgpa,intro_cgpa)
 })
 
+
+// Download PDF
+document.getElementById('download').addEventListener('click', () => {
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF();
+    // alert("Downloaded");
+    // Get the HTML preview
+    const preview = document.getElementById('resume-content')
+    console.log(preview);
+    
+    // Use the HTML plugin to process the preview content
+    pdf.html(preview, {
+        callback: function (doc) {
+            doc.save('download.pdf'); // Save the PDF
+        },
+        x: 10, // Left margin
+        y: 10, // Top margin
+        width: 190, // Content width
+    });
+});
