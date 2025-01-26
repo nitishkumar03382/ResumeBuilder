@@ -11,7 +11,10 @@ function display(inp, op) {
     else
     op.innerHTML = inp.value
 }
-inp_name = document.getElementById("input-name")
+let inp_name = document.getElementById("input-name")
+
+
+
 inp_name.addEventListener("input", ()=>{
     
     introName = document.getElementById("intro-name")
@@ -75,22 +78,29 @@ display(inp_cgpa,intro_cgpa)
 })
 
 
-// Download PDF
 document.getElementById('download').addEventListener('click', () => {
+    const content = document.querySelector('.preview'); // Select the element with class "preview"
+
+    // Download as PDF
     const { jsPDF } = window.jspdf;
     const pdf = new jsPDF();
-    // alert("Downloaded");
-    // Get the HTML preview
-    const preview = document.getElementById('resume-content')
-    console.log(preview);
-    
-    // Use the HTML plugin to process the preview content
-    pdf.html(preview, {
-        callback: function (doc) {
-            doc.save('download.pdf'); // Save the PDF
-        },
-        x: 10, // Left margin
-        y: 10, // Top margin
-        width: 190, // Content width
+    // pdf.html(content, {
+    //     callback: function (doc) {
+    //         doc.save('preview.pdf'); // Save the PDF
+    //     },
+    //     x: 10, // Left margin
+    //     y: 10, // Top margin
+    //     width: 190 // Content width for A4
+    // });
+
+    // Download as Image
+const first_name = inp_name.value.split(' ');
+
+    html2canvas(content).then((canvas) => {
+        const link = document.createElement('a');
+
+        link.download = `${first_name[0]} resume`; 
+        link.href = canvas.toDataURL(); // Convert canvas to data URL
+        link.click(); // Trigger the download
     });
 });

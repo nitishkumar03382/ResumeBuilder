@@ -26,6 +26,7 @@ body {
     background-color: hsl(0, 0%, 94%);
     border: 1px solid #ccc;
     border-radius: 8px;
+    padding-bottom: 30px;
 }
 
 .input h2, .input p {
@@ -41,6 +42,35 @@ body {
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;
+}
+
+.input input[type="number"] {
+    width:  100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#download{
+
+    width:  100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #1a73e8;
+    color: white;
+
+}
+
+#download:hover{
+    background-color: #271ca3;
+
 }
 
 
@@ -108,15 +138,17 @@ body {
 .intro-linkedin{
     position: relative;
     right: 200px;
-    left: 50px;
+    left: 100px;
     font-size: 15px;
+    bottom: 10px;
     padding-left: 300px;
 }
 
 .intro-email{
     position: relative;
     display: inline;
-    top: 20px;
+    top: 10px;
+    left: 50px;
 }
 
 #intro-phone{
@@ -174,13 +206,3 @@ body {
     font-weight: 600;
 }
 
-
-.input {
-    width: 25%; /* Specify width */
-    height: 700px; /* Specify height */
-    border: 1px solid #ccc; /* Optional border for visibility */
-    padding: 10px; /* Internal spacing */
-    overflow-y: auto; /* Adds a vertical scrollbar if content overflows */
-    overflow-x: hidden; /* Disables horizontal scrollbar */
-    box-sizing: border-box; /* Ensures padding doesn't affect width/height */
-}
