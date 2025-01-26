@@ -12,14 +12,27 @@ function display(inp, op) {
     op.innerHTML = inp.value
 }
 let inp_name = document.getElementById("input-name")
-
-
-
-inp_name.addEventListener("input", ()=>{
+document.getElementById('input-name').addEventListener('input', () => {
+    const inputString = document.getElementById('input-name').value.trim(); // User input ko trim karte hain
     
-    introName = document.getElementById("intro-name")
-    display(inp_name, introName)
-})
+    // if (!inputString) {
+    //     document.getElementById('result').textContent = "Please enter a valid string.";
+    //     return;
+    // }
+
+    // Pehla letter uppercase aur baaki lowercase
+    const capitalizedString = inputString[0].toUpperCase() + inputString.slice(1).toLowerCase();
+
+    document.getElementById('intro-name').textContent = `${capitalizedString}`;
+});
+
+
+
+// inp_name.addEventListener("input", ()=>{
+    
+//     introName = document.getElementById("intro-name")
+//     display(inp_name, introName)
+// })
 
 inp_profile = document.getElementById("input-profile")
 inp_profile.addEventListener("input", ()=>{
