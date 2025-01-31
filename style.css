@@ -22,12 +22,33 @@ body {
 .input, .preview {
     width: 25%;
     padding: 15px;
-    /* background: #fff; */
     background-color: hsl(0, 0%, 94%);
     border: 1px solid #ccc;
     border-radius: 8px;
     padding-bottom: 30px;
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: auto;   /* Show vertical scrollbar if content exceeds */
+    
+    max-height: 680px;  /* Set a max height for the scrollable area */
 }
+
+/* Custom scrollbar for Webkit browsers (Chrome, Safari) */
+.input::-webkit-scrollbar, .preview::-webkit-scrollbar {
+    width: 8px;  /* Adjust the width of the scrollbar */
+}
+
+.input::-webkit-scrollbar-thumb, .preview::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    border-radius: 10px;
+}
+
+.input::-webkit-scrollbar-track, .preview::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+
 
 .input h2, .input p {
     margin-bottom: 10px;
@@ -52,6 +73,24 @@ body {
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;
+}
+#NEW-RESUME{
+
+    width:  100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    background-color: #1a73e8;
+    color: white;
+    
+}
+ #NEW-RESUME:hover{
+    background-color: #271ca3;
+
 }
 
 #download{
@@ -121,7 +160,7 @@ body {
     width: 50%;
     
   
-    padding-right: 5px;
+    /* padding-right: 2px; */
     text-align: right;
    
     color: #636060;
@@ -155,12 +194,15 @@ body {
     display: inline;
     position: relative;
     left: 78%;
-    bottom: 18px;
+    bottom: 30px;
 
 }
 
 #education-nav{
-    padding: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+   position: relative;
+   
    border-bottom: 3px solid black;
 }
 
@@ -184,25 +226,21 @@ body {
 #intro-course{
     display: block;
     position: relative; 
-    top: 18px;
+    top: 20px;
     font-size: 18px;
     color: #333;
 
 
 }
 
-#arrow{
-    position: relative;
-    top: 20px;
-    margin-right: 5px;
-    font-size: 20px;
-}
 
 #intro-cgpa{
     position: relative;
-    top: 20px;
+    top: 25px;
     gap: 5px;
     font-size: 20px;
     font-weight: 600;
+    
+    
 }
 
